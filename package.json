@@ -4,10 +4,7 @@
   "description": "",
   "main": "dist/server.js",
   "scripts": {
-    "build-ts": "tsc -p .",
-    "prestart": "copyfiles views/**/*.pug dist/",
-    "postinstall": "npm run build-ts && npm run prestart",
-    "start": "npm run serve",
+    "start": "nodemon server.ts",
     "serve": "node dist/server.js",
     "watch": "nodemon server.ts",
     "prod": "nodemon dist/server.js",
