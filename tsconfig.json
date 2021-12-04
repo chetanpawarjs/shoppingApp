@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "pretty": false,
+    "target": "es6",
+    "sourceMap": false,
+    "noImplicitAny": true,
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "outDir": "./dist",
+    "baseUrl": "./src"
+  },
+  "include": ["src/**/*.ts", "tests/**/*.spec.ts", "server.ts", "App.ts"],
+  "exclude": ["node_modules"]
+}

@@ -1,0 +1,12 @@
+{"message":"logger called from app","level":"warn"}
+{"message":"called init","level":"info"}
+{"message":"Server listening on : 3000","level":"info"}
+{"level":"error","message":"Unhandled Promise Rejection: reason:"}
+{"message":"MongoNetworkError","level":"error"}
+{"message":"failed to connect to server [localhost:27017] on first connect [MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017]","level":"error"}
+{"message":"MongoNetworkError: failed to connect to server [localhost:27017] on first connect [MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017]\n    at Pool.<anonymous> (/home/chetan.p@ah.zymrinc.com/Documents/practice/eb-project-backend/node_modules/mongodb/lib/core/topologies/server.js:438:11)\n    at emitOne (events.js:116:13)\n    at Pool.emit (events.js:211:7)\n    at createConnection (/home/chetan.p@ah.zymrinc.com/Documents/practice/eb-project-backend/node_modules/mongodb/lib/core/connection/pool.js:562:14)\n    at connect (/home/chetan.p@ah.zymrinc.com/Documents/practice/eb-project-backend/node_modules/mongodb/lib/core/connection/pool.js:995:11)\n    at makeConnection (/home/chetan.p@ah.zymrinc.com/Documents/practice/eb-project-backend/node_modules/mongodb/lib/core/connection/connect.js:32:7)\n    at callback (/home/chetan.p@ah.zymrinc.com/Documents/practice/eb-project-backend/node_modules/mongodb/lib/core/connection/connect.js:280:5)\n    at Socket.err (/home/chetan.p@ah.zymrinc.com/Documents/practice/eb-project-backend/node_modules/mongodb/lib/core/connection/connect.js:310:7)\n    at Object.onceWrapper (events.js:315:30)\n    at emitOne (events.js:116:13)\n    at Socket.emit (events.js:211:7)\n    at emitErrorNT (internal/streams/destroy.js:73:8)\n    at _combinedTickCallback (internal/process/next_tick.js:139:11)\n    at process._tickDomainCallback (internal/process/next_tick.js:219:9)","level":"error"}
+{"message":"Server listening on : 3000 and swagger /docs","level":"info"}
+{"level":"error","message":"RangeError"}
+{"level":"error","message":"Port should be >= 0 and < 65536. Received NaN."}
+{"level":"error","message":"RangeError [ERR_SOCKET_BAD_PORT]: Port should be >= 0 and < 65536. Received NaN.\n    at Server.listen (net.js:1427:13)\n    at /home/chetan.p@ah.zymrinc.com/Documents/practice/myapp/server.ts:17:12\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)"}
+{"level":"info","message":"Server listening on : 3000 and swagger /docs"}
