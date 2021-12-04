@@ -8,7 +8,6 @@ export interface IPagination {
   limit?: number;
   page?: number;
   pages?: number;
-  adCount?: number;
 }
 export interface IStandardErrorResponse extends IStandardResponse {
   error?: any;

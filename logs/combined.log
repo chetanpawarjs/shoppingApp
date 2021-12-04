@@ -10,3 +10,18 @@
 {"level":"error","message":"Port should be >= 0 and < 65536. Received NaN."}
 {"level":"error","message":"RangeError [ERR_SOCKET_BAD_PORT]: Port should be >= 0 and < 65536. Received NaN.\n    at Server.listen (net.js:1427:13)\n    at /home/chetan.p@ah.zymrinc.com/Documents/practice/myapp/server.ts:17:12\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)"}
 {"level":"info","message":"Server listening on : 3000 and swagger /docs"}
+{"level":"info","message":"Server listening on : 3000 and swagger /docs"}
+{"level":"info","message":"Server listening on : 3000 and swagger /docs"}
+{"level":"info","message":"Server listening on : 3000 and swagger /docs"}
+{"level":"info","message":"Server listening on : 3000 and swagger /docs"}
+{"level":"info","message":"Server listening on : 3000 and swagger /docs"}
+{"level":"info","message":"Server listening on : 3000 and swagger /docs"}
+{"level":"info","message":"Server listening on : 3000 and swagger /docs"}
+{"level":"info","message":"Server listening on : 3000 and swagger /docs"}
+{"level":"info","message":"Server listening on : 3000 and swagger /docs"}
+{"level":"info","message":"Server listening on : 3000 and swagger /docs"}
+{"level":"info","message":"Server listening on : 3000 and swagger /docs"}
+{"level":"info","message":"Server listening on : 3000 and swagger /docs"}
+{"level":"info","message":"Server listening on : 3000 and swagger /docs"}
+{"level":"info","message":"Server listening on : 3000 and swagger /docs"}
+{"level":"info","message":"Server listening on : 3000 and swagger /docs"}

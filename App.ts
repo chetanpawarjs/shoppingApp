@@ -21,7 +21,7 @@ if (process.env.NODE_ENV === 'production') {
  */
 export class App {
   public express: express.Application;
-  public mongoUrl: string = process.env.MONGO_URL || 'mongodb://127.0.0.1:27017/eb';
+  public mongoUrl: string = process.env.MONGO_URL || 'mongodb://127.0.0.1:27017/shoppingapp';
   public httpServer: http.Server;
 
   public async init(): Promise<void> {

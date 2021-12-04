@@ -4,6 +4,24 @@ import { IUser } from "./user.type";
 
 export const userSchema: Schema = new Schema(
   {
+    email: {
+      type: String,
+    },
+    paswword: {
+      type: String,
+    },
+    username: {
+      type: String,
+    },
+    city: {
+      type: String,
+    },
+    state: {
+      type: String,
+    },
+    country: {
+      type: String,
+    }
   },
   {
     timestamps: true,
