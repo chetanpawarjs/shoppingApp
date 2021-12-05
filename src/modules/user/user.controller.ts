@@ -62,18 +62,34 @@ export class UserController extends BaseController {
       ResponseHandler.JSONERROR(req, res, "getUser");
     }
   }
-  public async updateUser(req: Request, res: Response): Promise<void> {
-    try {
-      const userId: string = req.params.id;
-      const userReq: IUserRequest = req.body;
-      const userLib: UserLib = new UserLib()
-      const users: IUser[] = await userLib.updateUser(userId, userReq);
-      res.locals.data = users;
-      ResponseHandler.JSONSUCCESS(req, res);
-    } catch (err) {
-      res.locals.data = err;
-      ResponseHandler.JSONERROR(req, res, "updateUser");
-    }
+  // public async updateUser(req: Request, res: Response): Promise<void> {
+  //   try {
+  //     const userId: string = req.params.id;
+  //     const userReq: IUserRequest = req.body;
+  //     const userLib: UserLib = new UserLib()
+  //     const users: IUser[] = await userLib.updateUser(userId, userReq);
+  //     res.locals.data = users;
+  //     ResponseHandler.JSONSUCCESS(req, res);
+  //   } catch (err) {
+  //     res.locals.data = err;
+  //     ResponseHandler.JSONERROR(req, res, "updateUser");
+  //   }
+  // }
+  public async updateUser(req:Request, res: Response):Promise<void>
+  {
+      try
+      {
+          const userId : string = req.params.id;
+          const userReq : IUserRequest = req.body;
+          const userLib : UserLib = new UserLib();
+          const users : IUser[] = await userLib.updateUser(userId,userReq);
+          req.locals.data = users;
+          ResponseHandler.JSONSUCCESS(req,res);
+      }
+      catch(err){
+          req.locals.data - err;
+          ResponseHandler.JSONERROR(req,res,"updateUser");
+      }
   }
    public async deleteUser(req: Request, res: Response): Promise<void> {
     try {
