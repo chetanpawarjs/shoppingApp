@@ -10,10 +10,10 @@ export interface IUser extends Document {
 }
 
 export interface IUserRequest {
-  password: string;
-  email: string;
-  username: string;
-  city: string,
-  state: string,
-  country: string
+  password?: string;
+  email?: string;
+  username?: string;
+  city?: string,
+  state?: string,
+  country?: string
 }

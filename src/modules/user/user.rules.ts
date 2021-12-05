@@ -2,20 +2,7 @@ import { Request } from 'express';
 import { check } from 'express-validator/check';
 
 export const userRules: any = {
-  forSignIn: [
-    check('email')
-      .isEmail()
-      .withMessage('Invalid email address'),
-
-    check('password')
-      .isLength({ min: 5 })
-      .withMessage('Password should be greater than 5 char'),
-
-      check('mpin')
-      .isLength({ min: 6, max: 6 })
-      .withMessage('Mpin must be 6 digit'),
-  ],
-  forSignUser: [
+  forCreateUser: [
     check('email')
       .not()
       .isEmpty()
