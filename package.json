@@ -23,8 +23,6 @@
     "@types/multer-s3": "^2.7.9",
     "@types/nodemailer-smtp-transport": "^2.7.4",
     "@types/stripe": "^6.31.11",
-    "aws-sdk": "^2.848.0",
-    "bcrypt": "3.0.6",
     "body-parser": "^1.18.3",
     "bson": "^4.0.2",
     "cors": "2.8.5",
@@ -49,7 +47,6 @@
     "yamljs": "^0.3.0"
   },
   "devDependencies": {
-    "@types/bcrypt": "3.0.0",
     "@types/chai": "^4.1.7",
     "@types/cors": "2.8.5",
     "@types/dotenv": "6.1.1",
