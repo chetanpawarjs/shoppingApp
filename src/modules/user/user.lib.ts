@@ -24,13 +24,13 @@ export class UserLib {
   public async getUsers() : Promise<IUser[]>{
     return userModel.find();
   }
-  public async getUser(username: string) : Promise<IUserRequest>{
-    return userModel.findOne({username: username});
+  public async getUser(userId: string) : Promise<IUserRequest>{
+    return userModel.findOne({_id: userId});
   }
   public async updateUser(userId: string, userDetails:IUserRequest) : Promise<any>{
     return userModel.findOneAndUpdate({_id: userId}, {$set:userDetails},{new:true});
   }
   public async deleteUser(userId: string) : Promise<any>{
-    return userModel.findOneAndRemove({_id: userId});
+    return userModel.remove({_id: userId});
   }
 }

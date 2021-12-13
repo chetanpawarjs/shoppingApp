@@ -53,8 +53,8 @@ export class UserController extends BaseController {
     try {
       const userLib: UserLib = new UserLib()
       const userId : string = req.params.id;
-      const user: IUserRequest = await userLib.getUser(userId);
-      res.locals.data = user || {};
+      const users: IUserRequest = await userLib.getUser(userId);
+      res.locals.data = users || {};
       ResponseHandler.JSONSUCCESS(req, res);
     } catch (err) {
       res.locals.data = err;
@@ -78,8 +78,8 @@ export class UserController extends BaseController {
     try {
       const userId: string = req.params.id;
       const userLib: UserLib = new UserLib()
-      const users: IUser[] = await userLib.deleteUser(userId);
-      res.locals.data = users;
+      const user: IUser = await userLib.deleteUser(userId);
+      res.locals.data = user;
       res.locals.message = Messages.DELETE_USER_SUCCESSFULLY;
       ResponseHandler.JSONSUCCESS(req, res);
     } catch (err) {
