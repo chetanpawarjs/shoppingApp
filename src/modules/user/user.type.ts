@@ -16,4 +16,7 @@ export interface IUserRequest {
   city?: string,
   state?: string,
   country?: string
+  age?: number,
+  contactNo?: string,
+  token?: string
 }

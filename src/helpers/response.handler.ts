@@ -18,8 +18,8 @@ export class ResponseHandler {
       pagination: res.locals.pagination,
       message: res.locals.message || Messages.SUCCESS_RECEIVED,
     };
-
-    res.status(HttpStatus.OK).jsonp(obj);
+    console.log('obj', obj);
+    res.status(HttpStatus.OK).json(obj);
   }
 
   public static JSONERROR(req: Request, res: Response, apiName: string): void {
@@ -51,8 +51,9 @@ export class ResponseHandler {
     const errorCode: number = res.locals.statusCode || HttpStatus.BAD_REQUEST;
     obj = {
       success: false,
-      details: details,
+      // details: details,
       message: message || Messages.SOMETHING_BAD,
+      data: res.locals.data,
     };
     // error logs
     obj.functionName = apiName;

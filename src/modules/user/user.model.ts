@@ -7,7 +7,7 @@ export const userSchema: Schema = new Schema(
     email: {
       type: String,
     },
-    paswword: {
+    password: {
       type: String,
     },
     username: {
@@ -21,6 +21,16 @@ export const userSchema: Schema = new Schema(
     },
     country: {
       type: String,
+    },
+    age: {
+      type: Number,
+    },
+    contactNo: {
+      type: String
+    },
+    role: {
+      type: String,
+      enum:["user", "admin"]
     }
   },
   {
